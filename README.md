@@ -27,9 +27,10 @@ pip install fair-esm
 ```
 pip install scipy
 pip install torch-geometric
-pip install torch_scatter
+pip install torch-scatter
 pip install biotite
 pip install lightgbm
+pip install scikit-learn
 ```
 
 #### C) Create environment containing PyMOL
@@ -37,6 +38,7 @@ pip install lightgbm
 1. Create and activate virutal environment with pymol installed
 ```
 conda create -n pymol_env -c conda-forge -c schrodinger pymol-bundle -y
+conda install -c conda-forge scikit-learn
 conda activate pymol_env
  ```
 
@@ -54,6 +56,11 @@ conda activate pymol_env
 ```python src/predict_centres.py -t <target_name>```
 7. The three top-ranked sites and their centres will be saved in the 'predictions' directory
 
+## Issues
+
+Please report issues at https://github.com/oxpig/binding-sites 
+
 ## Citation
 
-In progress...
+Carbery, A., Buttenschoen, M., Skyner, R. et al. Learnt representations of proteins can be used for accurate prediction of small molecule binding sites on experimentally determined and predicted protein structures. J Cheminform 16, 32 (2024). https://doi.org/10.1186/s13321-024-00821-4 
+

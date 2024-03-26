@@ -27,7 +27,7 @@ def load_models(num_models):
     return models
 
 
-model, alphabet = esm.pretrained.load_model_and_alphabet_local('/Users/tyt15771/.cache/torch/hub/checkpoints/esm_if1_gvp4_t16_142M_UR50.pt')
+model, alphabet = esm.pretrained.esm_if1_gvp4_t16_142M_UR50()
 model.eval()
 
 parser = argparse.ArgumentParser()
